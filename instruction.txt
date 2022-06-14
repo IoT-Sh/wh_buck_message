@@ -1,0 +1,13 @@
+1. Go to https://console.cloud.google.com/apis/dashboard?pli=1
+2. Click on the Create Project button.
+3. Then provide the project name and the organization name which is optional. Then click on the create button.
+4. Now, that our project is created we need to enable the APIs that we require in this project. Click on the Enable APIs and Services button to search for the APIs that Google provides.
+5. Consequently, we will add two APIs for our project. Enable these two API
+    Google Sheets API
+    Google Drive API
+6. Once you have enabled the required APIs in your project then it’s time to create credentials for the service account. Click on the Create Credentials button to continue.
+7. Now, select Google Drive API in the type of API required question. We will be calling the API from a non UI based platform so select Other non-UI (e.g. cron job, daemon). Select the Application Data in the next question as we do not require any user data to run our application. And also we are not using any cloud-based compute engine for our application. Finally, click on the What credentials do I need? button
+8. Then, share the google spreadsheets with other people and provide permission like edit or view only. Similarly, we will provide access to our service account. We will give it the complete access so that we will be able to read as well as write the spreadsheets and download the JSON file of the credentials.
+9. Now, a JSON file will be downloaded which contains the keys to access the API. Our google service account is ready to use. In the next section, we will read and modify the data in the spreadsheet.
+10. From json file you will find the email id
+11. Than give access of created google sheets to the client_email
